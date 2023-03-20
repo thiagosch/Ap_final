@@ -1,8 +1,6 @@
 # Argentina programa: Trabajo final
 
 
-donaciones: necesidades, sistema de categorias(salud, daños materiales)
+##donaciones: necesidades, sistema de categorias(salud, daños materiales)
 
-
-
-galeria de arte: compra, venta, comentarios
+##galeria de arte: compra, venta, comentarios
