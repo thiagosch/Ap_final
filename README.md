@@ -6,13 +6,13 @@
 
 
 ## Integrantes
-
-  - [![nombre_placeholder](https://img.shields.io/badge/integrante-nombre_placeholder-a227cd?style=for-the-badge)![](https://img.shields.io/badge/-github/username_placeholder-blue?style=for-the-badge)](https://github.com/username_placeholder)
-  - [![nombre_placeholder](https://img.shields.io/badge/integrante-nombre_placeholder-a227cd?style=for-the-badge)![](https://img.shields.io/badge/-github/username_placeholder-blue?style=for-the-badge)](https://github.com/username_placeholder)
-  - [![nombre_placeholder](https://img.shields.io/badge/integrante-nombre_placeholder-a227cd?style=for-the-badge)![](https://img.shields.io/badge/-github/username_placeholder-blue?style=for-the-badge)](https://github.com/username_placeholder)
-  - [![nombre_placeholder](https://img.shields.io/badge/integrante-nombre_placeholder-a227cd?style=for-the-badge)![](https://img.shields.io/badge/-github/username_placeholder-blue?style=for-the-badge)](https://github.com/username_placeholder)
-  - [![nombre_placeholder](https://img.shields.io/badge/integrante-nombre_placeholder-a227cd?style=for-the-badge)![](https://img.shields.io/badge/-github/username_placeholder-blue?style=for-the-badge)](https://github.com/username_placeholder)
-  - [![nombre_placeholder](https://img.shields.io/badge/integrante-nombre_placeholder-a227cd?style=for-the-badge)![](https://img.shields.io/badge/-github/username_placeholder-blue?style=for-the-badge)](https://github.com/username_placeholder)
+  - [![Diaz_Brian_](https://img.shields.io/badge/integrante-Diaz_Brian-a227cd?style=for-the-badge)![](https://img.shields.io/badge/-github/username_placeholder-blue?style=for-the-badge)](https://github.com/username_placeholder)
+  - [![Vrdoljak_Ian](https://img.shields.io/badge/integrante-Vrdoljak_Ian-a227cd?style=for-the-badge)![](https://img.shields.io/badge/-github/Ian0001-blue?style=for-the-badge)](https://github.com/Ian0001)
+  - [![González_Carla_Elisabeth](https://img.shields.io/badge/integrante-González_Carla_Elisabeth-a227cd?style=for-the-badge)![](https://img.shields.io/badge/-github/egecarli-blue?style=for-the-badge)](https://github.com/egecarli)
+  - [![Gauna_Ajaya_Nicolas_Gabriel](https://img.shields.io/badge/integrante-Gauna_Ajaya_Nicolas_Gabriel-a227cd?style=for-the-badge)![](https://img.shields.io/badge/-github/username_placeholder-blue?style=for-the-badge)](https://github.com/username_placeholder)
+  - [![Fernández_Tomás](https://img.shields.io/badge/integrante-Fernández_Tomás-a227cd?style=for-the-badge)![](https://img.shields.io/badge/-github/username_placeholder-blue?style=for-the-badge)](https://github.com/username_placeholder)
+  - [![Beliz_Alejo](https://img.shields.io/badge/integrante-Beliz_Alejo-a227cd?style=for-the-badge)![](https://img.shields.io/badge/-github/username_placeholder-blue?style=for-the-badge)](https://github.com/username_placeholder)
+  - [![santiago_amerio](https://img.shields.io/badge/integrante-santiago_amerio-a227cd?style=for-the-badge)![](https://img.shields.io/badge/-github/thiagosch-blue?style=for-the-badge)](https://github.com/thiagosch)
 
   
 
