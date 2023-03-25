@@ -10,7 +10,7 @@
   - [![Vrdoljak_Ian](https://img.shields.io/badge/integrante-Vrdoljak_Ian-224daa?style=for-the-badge)![](https://img.shields.io/badge/-github/Ian0001-blue?style=for-the-badge)](https://github.com/Ian0001)
   - [![González_Carla_Elisabeth](https://img.shields.io/badge/integrante-González_Carla_Elisabeth-224daa?style=for-the-badge)![](https://img.shields.io/badge/-github/egecarli-blue?style=for-the-badge)](https://github.com/egecarli)
   - [![Gauna_Ajaya_Nicolas_Gabriel](https://img.shields.io/badge/integrante-Gauna_Ajaya_Nicolas_Gabriel-224daa?style=for-the-badge)![](https://img.shields.io/badge/-github/username_placeholder-blue?style=for-the-badge)](https://github.com/username_placeholder)
-  - [![Fernández_Tomás](https://img.shields.io/badge/integrante-Fernández_Tomás-224daa?style=for-the-badge)![](https://img.shields.io/badge/-github/username_placeholder-blue?style=for-the-badge)](https://github.com/username_placeholder)
+  - [![Fernández_Tomás](https://img.shields.io/badge/integrante-Fernández_Tomás-224daa?style=for-the-badge)![](https://img.shields.io/badge/-github/tomfernandez1-blue?style=for-the-badge)](https://github.com/tomfernandez1)
   - [![Beliz_Alejo](https://img.shields.io/badge/integrante-Beliz_Alejo-224daa?style=for-the-badge)![](https://img.shields.io/badge/-github/username_placeholder-blue?style=for-the-badge)](https://github.com/username_placeholder)
   - [![santiago_amerio](https://img.shields.io/badge/integrante-santiago_amerio-224daa?style=for-the-badge)![](https://img.shields.io/badge/-github/thiagosch-blue?style=for-the-badge)](https://github.com/thiagosch)
 
