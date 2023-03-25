@@ -15,8 +15,8 @@
   - [![nombre_placeholder](https://img.shields.io/badge/integrante-nombre_placeholder-a227cd?style=for-the-badge)![](https://img.shields.io/badge/-github/username_placeholder-blue?style=for-the-badge)](https://github.com/username_placeholder)
 
   
-<details>
-<summary> <h2> Website </h2> </summary>
+
+<h2> Website </h2>
 
 <!-- https://websitemockupgenerator.com/ -->
 
@@ -24,5 +24,5 @@
 
 [![Website Image](https://i.imgur.com/3zQjPkJ.png)](https://thiagosch.github.io/CAC_final/)
 
-</details>
+
 
