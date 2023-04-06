@@ -3,6 +3,7 @@ function toggle_burger() {
     burger_menu = document.getElementById("burger-menu");
     styles = getComputedStyle(navigation);
     displayStatus = styles.visibility;
+
     if (navigation.classList.contains("nav-open")) {
         navigation.classList.remove("nav-open");
 
