@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Galería de arte X</title>
+        <title>Personal</title>
         <link rel="stylesheet" href="./css/main.css" />
         <link
             rel="stylesheet"
@@ -31,7 +31,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet" />
     </head>
-    <body>
+    <body  class="onload" onload="document.querySelector('body').classList.remove('onload')">
         <header>
             <div id="nav-replacement"></div>
             <nav class="d-flex justify-content-between align-items-center colorbarra">
@@ -63,77 +63,42 @@
                     <a class="btn-nav" href="personal.html">Personal</a>
                     <a class="btn-nav" href="contacto.html">Contacto</a>
                     <a class="btn-nav" href="reclamos.html">Reclamos</a>
-                    
                 </span>
                 <span id="burger-menu-container" class="nav-container">
                     <a onclick="toggle_burger()" id="burger-menu" class="material-symbols-outlined"> menu </a>
                 </span>
             </nav>
         </header>
+        <br><br>
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://media.istockphoto.com/id/1369508766/es/foto/hermosa-mujer-latina-exitosa-sonriendo.jpg?s=1024x1024&w=is&k=20&c=u-FgO_3r1SklPbUn37R4DgJ0GQ4FeZPHr2Pj0ta_V7g=" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://media.istockphoto.com/id/1326973460/es/foto/feliz-hombre-de-negocios-mirando-a-la-c%C3%A1mara-y-sonriendo-mientras-est%C3%A1-de-pie-en-el-fondo.jpg?s=1024x1024&w=is&k=20&c=bQbm7jIe9i_jQ1MK--GLs-JgQfm-81-VMV-Ci9GAHaA=" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://media.istockphoto.com/id/1287459398/photo/smiling-female-architect-sitting-at-her-office-desk.jpg?s=1024x1024&w=is&k=20&c=EdVabOcgICHeaFKT0MId7cKVe4StmAk_C5NXtJ9wmVk=" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        
+                
+            
+                      
+        </div>
         <section class="sect0 row mb-5">
-            <span class="col-lg-3 order-sm-first order-lg-last">
-                <img
-                    class="rounded float-start img-fluid"
-                    src="https://www.nic.in/wp-content/uploads/2022/02/LC-NC.png"
-                    alt=""
-                />
-            </span>
-            <span class="col-lg-9 fs-3 order-sm-last order-lg-first">
-                <h2>{presentacion de organizacion}</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eligendi eos alias unde quam
-                    asperiores maxime, facilis nihil, harum at aperiam voluptas! Deleniti, architecto ea? Ab accusamus
-                    quo deserunt accusantium.
-                </p>
-            </span>
-        </section>
-
-        <main class="container-md">
-            <section class="section row mb-5 px-4" id="sect1">
-                <span class="col-lg-3">
-                    <img
-                        class="rounded float-start img-fluid"
-                        src="https://www.nic.in/wp-content/uploads/2022/02/LC-NC.png"
-                        alt=""
-                    />
-                </span>
-                <p class="col fs-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eligendi eos alias unde quam
-                    asperiores maxime, facilis nihil, harum at aperiam voluptas! Deleniti, architecto ea? Ab accusamus
-                    quo deserunt accusantium.
-                </p>
-            </section>
-            <section class="section row mb-5 px-4" id="sect2">
-                <span class="col-lg-3">
-                    <img
-                        class="rounded float-start img-fluid"
-                        src="https://www.nic.in/wp-content/uploads/2022/02/LC-NC.png"
-                        alt=""
-                    />
-                </span>
-                <p class="col-lg-9 fs-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eligendi eos alias unde quam
-                    asperiores maxime, facilis nihil, harum at aperiam voluptas! Deleniti, architecto ea? Ab accusamus
-                    quo deserunt accusantium.
-                </p>
-            </section>
-            <section class="section row mb-5 px-4" id="sect3">
-                <span class="col-lg-3">
-                    <img
-                        class="rounded float-start img-fluid"
-                        src="https://www.nic.in/wp-content/uploads/2022/02/LC-NC.png"
-                        alt=""
-                    />
-                </span>
-                <p class="col-lg-9 fs-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eligendi eos alias unde quam
-                    asperiores maxime, facilis nihil, harum at aperiam voluptas! Deleniti, architecto ea? Ab accusamus
-                    quo deserunt accusantium.
-                </p>
+            
             </section>
         </main>
-
-        
 
         <footer></footer>
 
