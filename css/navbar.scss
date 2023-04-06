@@ -1,71 +1,56 @@
-
-
 $pal-dark: #06283d;
 $pal-light: #dff6ff;
 $pal-h-dark: #1363df;
 $pal-h-light: #47b5ff;
-$text-light: hsl(197, 030%, 94%); 
+$text-light: hsl(197, 030%, 94%);
 
-
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    // border: 1px dashed red;
-}
-
-section {
-    background-color: $pal-dark;
-    color: $text-light;
-}
-
-
-$tone1: #b3b3b3;
-$tone2: #e3e3e3;
-$clr1: #9c95d3;
-$clr2: #6051cb;
-$clr3: #290bff;
-
-nav {
-    padding: 1rem;
-}
 header {
+    //pega la barra de navegacion al top
     position: sticky;
     top: 0;
+
+    //estilo links de navegacion
     .btn-nav {
         padding: 0rem 0.5rem;
         text-decoration: none;
-        color: $tone1;
+        color: $text-light;
         font-family: "Teko", sans-serif;
         font-size: 2em;
         letter-spacing: 0.1rem;
-        font-variant: all-small-caps;
+        text-transform: uppercase;
         line-height: 0.8em;
-        background-color: transparent !important;
-        border: 0px;
         &::after {
             font-size: 26px;
             margin: 0;
         }
     }
+
+
+    //
+    nav {
+        position: relative;
+        padding: 1rem;
+        z-index: 2;
+    }
+    #navigation {
+        position: relative;
+        z-index: 11;
+    }
+
+    #nav-background {
+        position: absolute;
+        left:0;
+        z-index: 10;
+        height: 100%;
+        width: 100%;
+        background-color: $pal-dark;
+    }
+   
 }
 
-#burger-menu-container {
-    transition: background-color 1s;
-    #burger-menu {
-        transition: color 1s;
-        vertical-align: middle;
-        top: 50%;
-        left: 0;
-        color: $clr2;
-        text-decoration: none;
-        font-size: 2.4em;
-        line-height: 1;
-        &:hover {
-            cursor: pointer;
-        }
-    }
+.nav-logo {
+    color: $pal-h-light !important;
+    z-index: 11;
 }
 
 // > a celular
@@ -73,34 +58,36 @@ header {
     #burger-menu-container {
         display: none;
     }
-    #nav-replacement {
-        display: none;
-    }
 }
 
 // celular
 @media only screen and (max-width: 600px) {
-    .nav-logo {
-        z-index: 5;
-    }
-    #nav-replacement {
-        z-index: 1;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background-color: #445472;
-    }
 
     #burger-menu-container {
+        transition: background-color 1s;
         z-index: 100;
         user-select: none;
+        #burger-menu {
+            transition: color 1s;
+            vertical-align: middle;
+            top: 50%;
+            left: 0;
+            color: $text-light;
+            text-decoration: none;
+            font-size: 2.4em;
+            line-height: 1;
+            &:hover {
+                cursor: pointer;
+            }
+        }
     }
+    
     #navigation {
         transition: 1s;
-        position: absolute;
+        position: absolute !important;
         left: 0;
         top: 100%;
-
+        z-index: 5 !important;
         display: flex !important;
         flex-flow: column nowrap;
         align-items: center;
@@ -126,4 +113,3 @@ header {
         overflow: hidden;
     }
 }
-
