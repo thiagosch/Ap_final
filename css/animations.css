@@ -1,5 +1,4 @@
 .underline-animation {
-
   display: inline-block;
   position: relative;
 }
@@ -21,4 +20,3 @@
   transform: scaleX(1);
   transform-origin: bottom left;
 }/*# sourceMappingURL=animations.css.map */
-
