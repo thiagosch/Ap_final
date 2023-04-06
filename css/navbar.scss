@@ -1,0 +1,115 @@
+$pal-dark: #06283d;
+$pal-light: #dff6ff;
+$pal-h-dark: #1363df;
+$pal-h-light: #47b5ff;
+$text-light: hsl(197, 030%, 94%);
+
+header {
+    //pega la barra de navegacion al top
+    position: sticky;
+    top: 0;
+
+    //estilo links de navegacion
+    .btn-nav {
+        padding: 0rem 0.5rem;
+        text-decoration: none;
+        color: $text-light;
+        font-family: "Teko", sans-serif;
+        font-size: 2em;
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+        line-height: 0.8em;
+        &::after {
+            font-size: 26px;
+            margin: 0;
+        }
+    }
+
+
+    //
+    nav {
+        position: relative;
+        padding: 1rem;
+        z-index: 2;
+    }
+    #navigation {
+        position: relative;
+        z-index: 11;
+    }
+
+    #nav-background {
+        position: absolute;
+        left:0;
+        z-index: 10;
+        height: 100%;
+        width: 100%;
+        background-color: $pal-dark;
+    }
+   
+}
+
+.nav-logo {
+    color: $pal-h-light !important;
+    z-index: 11;
+}
+
+// > a celular
+@media only screen and (min-width: 600px) {
+    #burger-menu-container {
+        display: none;
+    }
+}
+
+// celular
+@media only screen and (max-width: 600px) {
+
+    #burger-menu-container {
+        transition: background-color 1s;
+        z-index: 100;
+        user-select: none;
+        #burger-menu {
+            transition: color 1s;
+            vertical-align: middle;
+            top: 50%;
+            left: 0;
+            color: $text-light;
+            text-decoration: none;
+            font-size: 2.4em;
+            line-height: 1;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    
+    #navigation {
+        transition: 1s;
+        position: absolute !important;
+        left: 0;
+        top: 100%;
+        z-index: 5 !important;
+        display: flex !important;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        visibility: hidden;
+
+        height: content;
+        width: 100vw;
+        padding: 3rem 0;
+        margin-top: -100%;
+
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .nav-open {
+        visibility: unset !important;
+        margin-top: 0 !important;
+        background-color: rgba(0, 0, 0, 0.75) !important;
+        overflow: hidden;
+    }
+    .body-nav-open {
+        overflow: hidden;
+    }
+}

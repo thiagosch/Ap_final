@@ -1,0 +1,10 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section {
+  background-color: #06283d;
+  color: hsl(197, 30%, 94%);
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,21 @@
+
+
+$pal-dark: #06283d;
+$pal-light: #dff6ff;
+$pal-h-dark: #1363df;
+$pal-h-light: #47b5ff;
+$text-light: hsl(197, 030%, 94%); 
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    // border: 1px dashed red;
+}
+
+section {
+    background-color: $pal-dark;
+    color: $text-light;
+}
