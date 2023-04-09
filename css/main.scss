@@ -1,105 +1,40 @@
-$tone1: #b3b3b3;
-$tone2: #e3e3e3;
-$clr1: #9c95d3;
-$clr2: #6051cb;
-$clr3: #290bff;
 
-nav {
-    padding: 1rem;
-}
-header {
-    position: sticky;
-    top: 0;
-    .btn-nav {
-        padding: 0rem 0.5rem;
-        text-decoration: none;
-        color: $tone1;
-        font-family: "Teko", sans-serif;
-        font-size: 2em;
-        letter-spacing: 0.1rem;
-        font-variant: all-small-caps;
-        line-height: 0.8em;
-        background-color: transparent !important;
-        border: 0px;
-        &::after {
-            font-size: 26px;
-            margin: 0;
-        }
-    }
+
+
+$pal-dark: #06283d;
+$pal-light: #dff6ff;
+$pal-h-dark: #1363df;
+$pal-h-light: #47b5ff;
+$text-light: hsl(197, 030%, 94%); 
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    // border: 1px dashed red;
 }
 
-#burger-menu-container {
-    transition: background-color 1s;
-    #burger-menu {
-        transition: color 1s;
-        vertical-align: middle;
-        top: 50%;
-        left: 0;
-        color: $clr2;
-        text-decoration: none;
-        font-size: 2.4em;
-        line-height: 1;
-        &:hover {
-            cursor: pointer;
-        }
-    }
+section {
+    background-color: $pal-dark;
+    color: $text-light;
 }
 
-// > a celular
-@media only screen and (min-width: 600px) {
-    #burger-menu-container {
-        display: none;
-    }
-    #nav-replacement {
-        display: none;
-    }
+
+.form1{display: flex;flex-direction: column;margin-left: 5%;margin-right: 5%;}
+.colorbarra{background-image: linear-gradient(rgb(114, 78, 10),rgb(219, 181, 109));}
+.cards{display: flex;justify-content:space-around;flex-wrap: wrap;z-index: 0;}
+.colorfooter{background-color:rgb(133, 99, 37);}
+.segundodivfooter{display: flex;justify-content: space-around;background-color: rgb(160, 134, 86);}
+.subdivfooter{color: black;font-weight: 500;}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  z-index: 0;
 }
-
-// celular
-@media only screen and (max-width: 600px) {
-    .nav-logo {
-        z-index: 5;
-    }
-    #nav-replacement {
-        z-index: 1;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background-color: #445472;
-    }
-
-    #burger-menu-container {
-        z-index: 100;
-        user-select: none;
-    }
-    #navigation {
-        transition: 1s;
-        position: absolute;
-        left: 0;
-        top: 100%;
-
-        display: flex !important;
-        flex-flow: column nowrap;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
-        visibility: hidden;
-
-        height: content;
-        width: 100vw;
-        padding: 3rem 0;
-        margin-top: -100%;
-
-        background-color: rgba(0, 0, 0, 0);
-    }
-
-    .nav-open {
-        visibility: unset !important;
-        margin-top: 0 !important;
-        background-color: rgba(0, 0, 0, 0.75) !important;
-        overflow: hidden;
-    }
-    .body-nav-open {
-        overflow: hidden;
-    }
-}
+.cards .card {
+  z-index: -1;
+}/*# sourceMappingURL=main.css.map */
