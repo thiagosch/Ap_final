@@ -4,19 +4,20 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>page_name</title>
+        <title>Personal</title>
         <link rel="stylesheet" href="./css/main.css" />
-        <link rel="stylesheet" href="./css/navbar.css" />
-        <link rel="stylesheet" href="./css/animations.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
         <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
         />
         <style>
-            footer {
-                background-color: cadetblue;
-                height: 3rem;
+            section {
+                /* min-height: 50vh; */
+                background-color: antiquewhite;
             }
+
+            
         </style>
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
@@ -28,105 +29,57 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet" />
     </head>
-    <body>
-        <header>
-            
-            <nav class="d-flex justify-content-between align-items-center">
-                <div id="nav-background"></div>
+    <body  class="onload" onload="document.querySelector('body').classList.remove('onload')">
+        <header style="z-index: 1;">
+            <div id="nav-replacement"></div>
+            <nav class="d-flex justify-content-between align-items-center colorbarra">
                 <span class="nav-logo">
                     <a href="#"
-                        ><svg
-                            class="d-block"
-                            width="36"
-                            height="36"
-                            viewBox="0 0 612 612"
-                            xmlns="http://www.w3.org/2000/svg"
-                            focusable="false"
-                        >
-                            <title>Bootstrap</title>
-                            <path
-                                fill="currentColor"
-                                d="M510 8a94.3 94.3 0 0 1 94 94v408a94.3 94.3 0 0 1-94 94H102a94.3 94.3 0 0 1-94-94V102a94.3 94.3 0 0 1 94-94h408m0-8H102C45.9 0 0 45.9 0 102v408c0 56.1 45.9 102 102 102h408c56.1 0 102-45.9 102-102V102C612 45.9 566.1 0 510 0z"
-                            ></path>
-                            <path
-                                fill="currentColor"
-                                d="M196.77 471.5V154.43h124.15c54.27 0 91 31.64 91 79.1 0 33-24.17 63.72-54.71 69.21v1.76c43.07 5.49 70.75 35.82 70.75 78 0 55.81-40 89-107.45 89zm39.55-180.4h63.28c46.8 0 72.29-18.68 72.29-53 0-31.42-21.53-48.78-60-48.78h-75.57zm78.22 145.46c47.68 0 72.73-19.34 72.73-56s-25.93-55.37-76.46-55.37h-74.49v111.4z"
-                            ></path>
-                        </svg>
+                        ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                          </svg>
                     </a>
                 </span>
                 <span id="navigation" class="nav-container">
-                    <a class="btn-nav underline-animation" href="index.html">Inicio</a>
-                    <a class="btn-nav underline-animation" href="">tse</a>
-                    <a class="btn-nav underline-animation" href="">ttet</a>
-                    <a class="btn-nav underline-animation" href="about_us.html">Nosotros</a>
+                    <a class="btn-nav" href="index.html">Inicio</a>
+                    <a class="btn-nav" href="about us.html">Nosotros</a>
+                    <a class="btn-nav" href="personal.html">Personal</a>
+                    <a class="btn-nav" href="contacto.html">Contacto</a>
+                    <a class="btn-nav" href="reclamos.html">Reclamos</a>
                 </span>
                 <span id="burger-menu-container" class="nav-container">
                     <a onclick="toggle_burger()" id="burger-menu" class="material-symbols-outlined"> menu </a>
                 </span>
             </nav>
         </header>
-
+        <br><br>
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://media.istockphoto.com/id/1369508766/es/foto/hermosa-mujer-latina-exitosa-sonriendo.jpg?s=1024x1024&w=is&k=20&c=u-FgO_3r1SklPbUn37R4DgJ0GQ4FeZPHr2Pj0ta_V7g=" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://media.istockphoto.com/id/1326973460/es/foto/feliz-hombre-de-negocios-mirando-a-la-c%C3%A1mara-y-sonriendo-mientras-est%C3%A1-de-pie-en-el-fondo.jpg?s=1024x1024&w=is&k=20&c=bQbm7jIe9i_jQ1MK--GLs-JgQfm-81-VMV-Ci9GAHaA=" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://media.istockphoto.com/id/1287459398/photo/smiling-female-architect-sitting-at-her-office-desk.jpg?s=1024x1024&w=is&k=20&c=EdVabOcgICHeaFKT0MId7cKVe4StmAk_C5NXtJ9wmVk=" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        
+                
+            
+                      
+        </div>
         <section class="sect0 row mb-5">
-            <span class="col-lg-3 order-sm-first order-lg-last">
-                <img
-                    class="rounded float-start img-fluid"
-                    src="https://www.nic.in/wp-content/uploads/2022/02/LC-NC.png"
-                    alt=""
-                />
-            </span>
-            <span class="col-lg-9 fs-3 order-sm-last order-lg-first">
-                <h2>{presentacion de organizacion}</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eligendi eos alias unde quam
-                    asperiores maxime, facilis nihil, harum at aperiam voluptas! Deleniti, architecto ea? Ab accusamus
-                    quo deserunt accusantium.
-                </p>
-            </span>
-        </section>
-
-        <main class="container-md">
-            <section class="section row mb-5 px-4" id="sect1">
-                <span class="col-lg-3">
-                    <img
-                        class="rounded float-start img-fluid"
-                        src="https://www.nic.in/wp-content/uploads/2022/02/LC-NC.png"
-                        alt=""
-                    />
-                </span>
-                <p class="col fs-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eligendi eos alias unde quam
-                    asperiores maxime, facilis nihil, harum at aperiam voluptas! Deleniti, architecto ea? Ab accusamus
-                    quo deserunt accusantium.
-                </p>
-            </section>
-            <section class="section row mb-5 px-4" id="sect2">
-                <span class="col-lg-3">
-                    <img
-                        class="rounded float-start img-fluid"
-                        src="https://www.nic.in/wp-content/uploads/2022/02/LC-NC.png"
-                        alt=""
-                    />
-                </span>
-                <p class="col-lg-9 fs-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eligendi eos alias unde quam
-                    asperiores maxime, facilis nihil, harum at aperiam voluptas! Deleniti, architecto ea? Ab accusamus
-                    quo deserunt accusantium.
-                </p>
-            </section>
-            <section class="section row mb-5 px-4" id="sect3">
-                <span class="col-lg-3">
-                    <img
-                        class="rounded float-start img-fluid"
-                        src="https://www.nic.in/wp-content/uploads/2022/02/LC-NC.png"
-                        alt=""
-                    />
-                </span>
-                <p class="col-lg-9 fs-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eligendi eos alias unde quam
-                    asperiores maxime, facilis nihil, harum at aperiam voluptas! Deleniti, architecto ea? Ab accusamus
-                    quo deserunt accusantium.
-                </p>
+            
             </section>
         </main>
 
@@ -212,8 +165,6 @@
             <!-- Copyright -->
           </footer>
 
-    
-
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
             integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
@@ -228,4 +179,3 @@
         <script src="./js/main.js"></script>
     </body>
 </html>
-
