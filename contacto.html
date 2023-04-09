@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Contacto</title>
         <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./css/navbar.css" />
+        <link rel="stylesheet" href="./css/animations.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
         <link
             rel="stylesheet"
@@ -30,28 +32,29 @@
         <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet" />
     </head>
     <body  class="onload" onload="document.querySelector('body').classList.remove('onload')">
-        <header>
-            <div id="nav-replacement"></div>
-            <nav class="d-flex justify-content-between align-items-center colorbarra">
-                <span class="nav-logo">
-                    <a href="#"
-                        ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
-                          </svg>
-                    </a>
-                </span>
-                <span id="navigation" class="nav-container">
-                    <a class="btn-nav" href="index.html">Inicio</a>
-                    <a class="btn-nav" href="about us.html">Nosotros</a>
-                    <a class="btn-nav" href="personal.html">Personal</a>
-                    <a class="btn-nav" href="contacto.html">Contacto</a>
-                    <a class="btn-nav" href="reclamos.html">Reclamos</a>
-                </span>
-                <span id="burger-menu-container" class="nav-container">
-                    <a onclick="toggle_burger()" id="burger-menu" class="material-symbols-outlined"> menu </a>
-                </span>
-            </nav>
-        </header>
+      <header style="z-index: 1;">
+           
+        <nav class="d-flex justify-content-between align-items-center">
+            <div id="nav-background"></div>
+            <span class="nav-logo">
+                <a href="#"
+                    ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                      </svg>
+                </a>
+            </span>
+            <span id="navigation" class="nav-container">
+                <a class="btn-nav" href="index.html">Inicio</a>
+                <a class="btn-nav" href="about us.html">Nosotros</a>
+                <a class="btn-nav" href="personal.html">Personal</a>
+                <a class="btn-nav" href="contacto.html">Contacto</a>
+                <a class="btn-nav" href="reclamos.html">Reclamos</a>
+            </span>
+            <span id="burger-menu-container" class="nav-container">
+                <a onclick="toggle_burger()" id="burger-menu" class="material-symbols-outlined"> menu </a>
+            </span>
+        </nav>
+    </header>
         <br>
         <form class="form1">
             <div class="form-group">
