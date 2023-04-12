@@ -33,8 +33,9 @@ section {
 
 .segundodivfooter {
   display: flex;
-  justify-content: space-around;
+  justify-content:space-around;
   background-color: rgb(160, 134, 86);
+  flex-wrap: wrap;
 }
 
 .subdivfooter {
@@ -49,6 +50,22 @@ section {
   z-index: 0;
 }
 
+.section{
+  background-color: rgb(160, 134, 86);
+  color:  hsl(197, 30%, 94%);
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 1%;
+  border-radius: 25px;
+}
+
+.form-control:focus {
+  border-color: rgb(160, 134, 86)!important;
+  box-shadow:  inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(160, 134, 86)!important;
+}
 .cards .card {
   z-index: -1;
 } /*# sourceMappingURL=main.css.map */
