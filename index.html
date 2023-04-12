@@ -33,25 +33,34 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet" />
+        <script src="./js/api-interactions.js"></script>
     </head>
     <body>
-        <header style="z-index: 1;">
-           
-            <nav class="d-flex justify-content-between align-items-center">
-                <div id="nav-background"></div>
+        <header>
+            <div id="nav-replacement"></div>
+            <nav class="d-flex justify-content-between align-items-center colorbarra">
                 <span class="nav-logo">
                     <a href="#"
-                        ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
-                          </svg>
+                        ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-arrow-up-circle"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"
+                            />
+                        </svg>
                     </a>
                 </span>
                 <span id="navigation" class="nav-container">
                     <a class="btn-nav" href="index.html">Inicio</a>
-                    <a class="btn-nav" href="about_us.html">Nosotros</a>
+                    <a class="btn-nav" href="about us.html">Nosotros</a>
                     <a class="btn-nav" href="personal.html">Personal</a>
                     <a class="btn-nav" href="contacto.html">Contacto</a>
-                    <a class="btn-nav" href="reclamos.html">Reclamos</a>
                 </span>
                 <span id="burger-menu-container" class="nav-container">
                     <a onclick="toggle_burger()" id="burger-menu" class="material-symbols-outlined"> menu </a>
@@ -63,16 +72,15 @@
             <span class="col-lg-3 order-sm-first order-lg-last">
                 <img
                     class="rounded float-start img-fluid"
-                    src="https://www.nic.in/wp-content/uploads/2022/02/LC-NC.png"
+                    src="https://images.unsplash.com/photo-1612413621534-5bfd1d5bb13e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
                     alt=""
                 />
             </span>
             <span class="col-lg-9 fs-3 order-sm-last order-lg-first">
-                <h2>{presentacion de organizacion}</h2>
+                <h2>Galería de arte G3</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eligendi eos alias unde quam
-                    asperiores maxime, facilis nihil, harum at aperiam voluptas! Deleniti, architecto ea? Ab accusamus
-                    quo deserunt accusantium.
+                    Nuestras obras de arte están valuadas en doláres. Para conocer más visite nuestra galería, o
+                    contáctenos vía la sección Contacto.
                 </p>
             </span>
         </section>
@@ -82,8 +90,9 @@
                 <span class="col-lg-3">
                     <img
                         class="rounded float-start img-fluid"
-                        src="https://www.nic.in/wp-content/uploads/2022/02/LC-NC.png"
-                        alt=""
+                        src="https://images.unsplash.com/photo-1578926375605-eaf7559b1458?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1363&amp;q=80"
+                        width="1072"
+                        height="815"
                     />
                 </span>
                 <p class="col fs-3">
@@ -96,7 +105,7 @@
                 <span class="col-lg-3">
                     <img
                         class="rounded float-start img-fluid"
-                        src="https://www.nic.in/wp-content/uploads/2022/02/LC-NC.png"
+                        src="https://images.unsplash.com/photo-1582561424760-0321d75e81fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGludHVyYXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
                         alt=""
                     />
                 </span>
@@ -110,7 +119,22 @@
                 <span class="col-lg-3">
                     <img
                         class="rounded float-start img-fluid"
-                        src="https://www.nic.in/wp-content/uploads/2022/02/LC-NC.png"
+                        src="https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHBpbnR1cmFzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                        alt=""
+                    />
+                </span>
+                <p class="col-lg-9 fs-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eligendi eos alias unde quam
+                    asperiores maxime, facilis nihil, harum at aperiam voluptas! Deleniti, architecto ea? Ab accusamus
+                    quo deserunt accusantium.
+                </p>
+            </section>
+
+            <section class="section row mb-5 px-4" id="sect4">
+                <span class="col-lg-3">
+                    <img
+                        class="rounded float-start img-fluid"
+                        src="https://images.unsplash.com/photo-1582562124811-c09040d0a901?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fHBpbnR1cmFzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                         alt=""
                     />
                 </span>
@@ -124,87 +148,64 @@
 
         <footer class="text-center text-white colorfooter">
             <!-- Grid container -->
-            <div class="container p-4  colorfooter">
-              <!-- Section: Social media -->
+            <div class="container p-4 colorfooter">
+                <!-- Section: Social media -->
                 <!-- Facebook -->
-                <a
-                  class="btn text-white btn-floating m-1"
-                  style="background-color: #3b5998;"
-                  href="#!"
-                  role="button"
-                  ><i class="bi bi-facebook"></i
+                <a class="btn text-white btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"
+                    ><i class="bi bi-facebook"></i
                 ></a>
-          
+
                 <!-- Twitter -->
-                <a
-                  class="btn text-white btn-floating m-1"
-                  style="background-color: #55acee;"
-                  href="#!"
-                  role="button"
-                  ><i class="bi bi-twitter"></i
+                <a class="btn text-white btn-floating m-1" style="background-color: #55acee" href="#!" role="button"
+                    ><i class="bi bi-twitter"></i
                 ></a>
-          
+
                 <!-- Google -->
-                <a
-                  class="btn text-white btn-floating m-1"
-                  style="background-color: #dd4b39;"
-                  href="#!"
-                  role="button"
-                  ><i class="bi bi-google"></i
+                <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"
+                    ><i class="bi bi-google"></i
                 ></a>
-          
+
                 <!-- Instagram -->
-                <a
-                  class="btn text-white btn-floating m-1"
-                  style="background-color: #ac2bac;"
-                  href="#!"
-                  role="button"
-                  ><i class="bi bi-instagram"></i
+                <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"
+                    ><i class="bi bi-instagram"></i
                 ></a>
-          
+
                 <!-- Linkedin -->
-                <a
-                  class="btn text-white btn-floating m-1"
-                  style="background-color: #0082ca;"
-                  href="#!"
-                  role="button"
-                  ><i class="bi bi-linkedin"></i
+                <a class="btn text-white btn-floating m-1" style="background-color: #0082ca" href="#!" role="button"
+                    ><i class="bi bi-linkedin"></i
                 ></a>
                 <!-- Github -->
-                <a
-                  class="btn text-white btn-floating m-1"
-                  style="background-color: #333333;"
-                  href="#!"
-                  role="button"
-                  ><i class="bi bi-github"></i
+                <a class="btn text-white btn-floating m-1" style="background-color: #333333" href="#!" role="button"
+                    ><i class="bi bi-github"></i
                 ></a>
-              <!-- Section: Social media -->
+                <!-- Section: Social media -->
             </div>
             <div class="text-center p-3 segundodivfooter">
-              <div class="subdivfooter">© 2020 Copyright:
-              <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                <div class="subdivfooter">
+                    © 2020 Copyright:
+                    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
                 </div>
-              <div class="subdivfooter">
-                <ul>HORARIOS
-                    <li>Lunes | Abierto de 13:00 a 19:00hs</li>
-                    <li>Martes | Abierto de 13:00 a 19:00hs</li>
-                    <li>Miércoles | Abierto de 13:00 a 19:00hs</li>
-                    <li>Jueves | Abierto de 13:00 a 19:00hs</li>
-                    <li>Viernes | Abierto de 13:00 a 19:00hs</li>
-                    <li>Sábado | Abierto de 13:00 a 19:00hs</li>
-                    <li>Domingo | Abierto de 13:00 a 19:00hs</li>
-                </ul>
-              </div> 
-              <div class="subdivfooter">
-                <ul>UBICACIÓN
-                    <li>Av. del Libertador 0000, Ciudad de Buenos Aires</li>
-                </ul>
-              </div> 
+                <div class="subdivfooter">
+                    <ul>
+                        HORARIOS
+                        <li>Lunes | Abierto de 13:00 a 19:00hs</li>
+                        <li>Martes | Abierto de 13:00 a 19:00hs</li>
+                        <li>Miércoles | Abierto de 13:00 a 19:00hs</li>
+                        <li>Jueves | Abierto de 13:00 a 19:00hs</li>
+                        <li>Viernes | Abierto de 13:00 a 19:00hs</li>
+                        <li>Sábado | Abierto de 13:00 a 19:00hs</li>
+                        <li>Domingo | Abierto de 13:00 a 19:00hs</li>
+                    </ul>
+                </div>
+                <div class="subdivfooter">
+                    <ul>
+                        UBICACIÓN
+                        <li>Av. del Libertador 0000, Ciudad de Buenos Aires</li>
+                    </ul>
+                </div>
             </div>
             <!-- Copyright -->
-          </footer>
-
-    
+        </footer>
 
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
@@ -220,4 +221,3 @@
         <script src="./js/main.js"></script>
     </body>
 </html>
-

@@ -10,7 +10,7 @@ function toggle_burger() {
         burger_menu.classList.remove("burger-open");
     } else {
         navigation.classList.add("nav-open");
-        
+
         burger_menu.innerHTML = "close";
         burger_menu.classList.add("burger-open");
     }
