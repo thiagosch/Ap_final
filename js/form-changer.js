@@ -75,7 +75,7 @@ function reload_errors(item_reload) {
 async function form_submission() {
     let message = message_container.value;
     let name = values["name"];
-    let email = values["email"];
+    let email = values["text_mail"];
     let lastname = values["lastname"];
     const url = "https://formspree.io/f/meqwprnv";
     data = { name: name, text_mail: email, lastname: lastname, message: message };
@@ -87,7 +87,7 @@ async function form_submission() {
         },
         body: JSON.stringify(data), 
     });
-    console.log(await response);
+    console.log(response);
     
     show_success();
 }
