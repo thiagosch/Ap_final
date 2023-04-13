@@ -179,18 +179,18 @@ footer td {
 }
 .form-contacto input:focus,
 .form-contacto textarea:focus {
-  border: 1px solid rgb(229, 102, 23);
+  border: 1px solid rgb(229, 164, 23);
 }
 .form-contacto button {
   font-size: 1.5em;
   transition: color 0.5s, background-color 0.5s;
   width: 100%;
   padding: 0.2rem 0.5rem;
-  border: 1px solid rgba(229, 103, 23, 0.8);
+  border: 1px solid rgba(189, 136, 66, 0.8);
   color: black;
   background: none;
 }
 .form-contacto button:hover {
-  background-color: rgba(229, 103, 23, 0.8);
+  background-color: rgba(189, 145, 49, 0.8);
   color: white;
 }/*# sourceMappingURL=main.css.map */
