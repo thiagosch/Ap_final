@@ -4,6 +4,17 @@
   box-sizing: border-box;
 }
 
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
 section {
   background-color: rgb(160, 134, 86);
   color: hsl(197, 30%, 94%);
@@ -27,13 +38,21 @@ section {
   z-index: 0;
 }
 
+footer {
+  position: relative;
+  bottom: 0;
+}
+footer td {
+  padding-left: 0.5rem;
+}
+
 .colorfooter {
   background-color: rgb(133, 99, 37);
 }
 
 .segundodivfooter {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   background-color: rgb(160, 134, 86);
   flex-wrap: wrap;
 }
@@ -50,22 +69,128 @@ section {
   z-index: 0;
 }
 
-.section{
+.section {
   background-color: rgb(160, 134, 86);
-  color:  hsl(197, 30%, 94%);
+  color: hsl(197, 30%, 94%);
   margin-left: 5%;
   margin-right: 5%;
+  margin-bottom: 5%;
   padding-top: 1%;
   padding-left: 1%;
   padding-right: 1%;
   padding-bottom: 1%;
-  border-radius: 25px;
+  border-radius: 8px;
 }
 
-.form-control:focus {
-  border-color: rgb(160, 134, 86)!important;
-  box-shadow:  inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(160, 134, 86)!important;
-}
 .cards .card {
   z-index: -1;
-} /*# sourceMappingURL=main.css.map */
+} 
+@keyframes to_inactive {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes to_active {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#success {
+  color: rgb(60, 60, 60);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  border: 3px solid rgb(160, 134, 86);
+}
+#success span {
+  font-weight: bold;
+}
+#success.to-active {
+  display: block !important;
+  opacity: 1;
+  animation-name: to_active;
+  animation-duration: 0.5s;
+}
+#success.inactive {
+  opacity: 0;
+  display: none !important;
+}
+
+.form-contacto {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.form-contacto.to-inactive {
+  opacity: 1;
+  animation-name: to_inactive;
+  animation-duration: 0.5s;
+}
+.form-contacto.inactive {
+  opacity: 0;
+  display: none !important;
+}
+.form-contacto.to-active {
+  opacity: 1;
+  animation-name: to_active;
+  animation-duration: 0.5s;
+}
+.form-contacto div {
+  padding-bottom: 1rem;
+}
+.form-contacto label {
+  padding-left: 1rem;
+}
+.form-contacto .label-error i,
+.form-contacto .label-error span {
+  color: tomato;
+}
+.form-contacto input,
+.form-contacto textarea {
+  display: block;
+  width: 100%;
+  transition: border 0.5s;
+  padding: 0.5rem;
+  border: none;
+  border: 1px solid rgba(229, 102, 23, 0.1);
+  border-bottom: 1px solid rgba(229, 103, 23, 0.1);
+  border-radius: 5px 5px 0 0;
+  box-shadow: none;
+  outline: 0 none;
+}
+.form-contacto input::-moz-placeholder, .form-contacto textarea::-moz-placeholder {
+  color: rgb(227, 227, 227);
+}
+.form-contacto input::placeholder,
+.form-contacto textarea::placeholder {
+  color: rgb(227, 227, 227);
+}
+.form-contacto input:hover,
+.form-contacto textarea:hover {
+  border-bottom: 1px solid rgb(229, 102, 23);
+}
+.form-contacto input:focus,
+.form-contacto textarea:focus {
+  border: 1px solid rgb(229, 102, 23);
+}
+.form-contacto button {
+  font-size: 1.5em;
+  transition: color 0.5s, background-color 0.5s;
+  width: 100%;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid rgba(229, 103, 23, 0.8);
+  color: black;
+  background: none;
+}
+.form-contacto button:hover {
+  background-color: rgba(229, 103, 23, 0.8);
+  color: white;
+}/*# sourceMappingURL=main.css.map */

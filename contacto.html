@@ -13,12 +13,6 @@
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
         />
 
-        <style>
-            footer {
-                background-color: cadetblue;
-                height: 3rem;
-            }
-        </style>
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -39,14 +33,9 @@
         <header>
             <nav class="d-flex justify-content-between align-items-center colorbarra">
                 <div id="nav-background"></div>
-                <span class="nav-logo">
+                <div class="nav-logo">
                     <a href="./"
-                        ><svg
-                        width="35"
-                        height="35"
-                            viewBox="0 0 340 334"
-                            class="css-1j8o68f"
-                        >
+                        ><svg width="35" height="35" viewBox="0 0 340 334" class="css-1j8o68f">
                             <defs id="SvgjsDefs1243"></defs>
                             <g
                                 id="SvgjsG1244"
@@ -84,44 +73,71 @@
                             </g>
                         </svg>
                     </a>
-                </span>
-                <span id="navigation" class="nav-container">
+                </div>
+                <div id="navigation" class="nav-container">
                     <a class="btn-nav underline-animation" href="./index.html">Inicio</a>
                     <a class="btn-nav underline-animation" href="./about_us.html">Nosotros</a>
                     <a class="btn-nav underline-animation" href="./personal.html">Personal</a>
                     <a class="btn-nav underline-animation" href="./contacto.html">Contacto</a>
-                    <a class="btn-nav underline-animation" href="./reclamos.html">Reclamos</a>
-                </span>
+                </div>
 
-                <span id="burger-menu-container" class="nav-container">
+                <div id="burger-menu-container" class="nav-container">
                     <a onclick="toggle_burger()" id="burger-menu" class="material-symbols-outlined"> menu </a>
-                </span>
+                </div>
             </nav>
         </header>
-        <br /><br>
+       
         <main>
-            <form class="form1">
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Dirección de email</label>
-                    <input
-                        type="email"
-                        class="form-control"
-                        id="exampleFormControlInput1"
-                        placeholder="name@example.com"
-                    />
+            <div id="forms-container">
+                <form id="second-form" class="container form-contacto inactive" onsubmit="return false;">
+                    <div>
+                        <label for="comment">Escribe tu comentario</label>
+                        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button id="send-button" onclick="show_success()">
+                            enviar <i class="bi bi-check-lg"></i>
+                        </button>
+                    </div>
+                </form>
+                <form id="first-form" class="container form-contacto" onsubmit="return false;">
+                    <div>
+                        <label for="email-input">Dirección de email</label>
+                        <input
+                            type="email"
+                            id="email-input"
+                            placeholder="name@example.com"
+                            onKeyDown="reload_errors('mail')"
+                        />
+                    </div>
+                    <div>
+                        <label for="name-input">Nombre</label>
+                        <input type="text" id="name-input" placeholder="Juan" onKeyUp="reload_errors('name')" />
+                    </div>
+                    <div>
+                        <label for="lastname-input">Apellido</label>
+                        <input
+                            type="text"
+                            id="lastname-input"
+                            placeholder="Perez"
+                            onKeyUp="reload_errors('lastname')"
+                        />
+                    </div>
+
+                    <div class="text-center">
+                        <button id="next-button" onclick="check_inputs()">
+                            siguiente <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </form>
+                <div class="container inactive" id="success">
+                    
                 </div>
-                <br /><br>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Su consulta</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <br /><br>
-                <div><button type="submit">Enviar</button></div>
-            </form>
-            <section class="sect0 row mb-5"></section><br><br><br>
+            </div>
+         
         </main>
 
-        <footer class="text-center text-white colorfooter">
+        <footer class="text-white colorfooter">
             <!-- Grid container -->
             <div class="container colorfooter">
                 <!-- Section: Social media -->
@@ -155,21 +171,40 @@
                 ></a>
                 <!-- Section: Social media -->
             </div>
-            <div class="text-center p-3 segundodivfooter">
+            <div class="p-3 segundodivfooter">
                 <div class="subdivfooter">
-                    <ul>
-                        HORARIOS
-                        <li>Lunes | 13:00 a 19:00hs</li>
-                        <li>Martes | 13:00 a 19:00hs</li>
-                        <li>Miércoles | 13:00 a 19:00hs</li>
-                        <li>Jueves | 13:00 a 19:00hs</li>
-                        <li>Viernes | 13:00 a 19:00hs</li>
-                        <li>Sábado | 13:00 a 19:00hs</li>
-                        <li>Domingo | 13:00 a 19:00hs</li>
-                    </ul>
+                    <table>
+                        <tr>
+                            <td>lunes</td>
+                            <td>13:00 a 19:00hs</td>
+                        </tr>
+                        <tr>
+                            <td>Martes</td>
+                            <td>13:00 a 19:00hs</td>
+                        </tr>
+                        <tr>
+                            <td>Miércoles</td>
+                            <td>13:00 a 19:00hs</td>
+                        </tr>
+                        <tr>
+                            <td>Jueves</td>
+                            <td>13:00 a 19:00hs</td>
+                        </tr>
+                        <tr>
+                            <td>Viernes</td>
+                            <td>13:00 a 19:00hs</td>
+                        </tr>
+                        <tr>
+                            <td>Sábado</td>
+                            <td>13:00 a 19:00hs</td>
+                        </tr>
+                        <tr>
+                            <td>Domingo</td>
+                            <td>13:00 a 19:00hs</td>
+                        </tr>
+                    </table>
                 </div>
-                
-                
+
                 <div class="subdivfooter">
                     <ul>
                         UBICACIÓN
@@ -177,25 +212,16 @@
                     </ul>
                     <ul>
                         TELÉFONO
-                        <li style="text-align: start;"><i class="bi bi-telephone"></i>  Teléfono fijo: 9010101-Cel: 543622010101</li>
+                        <li style="text-align: start">
+                            <i class="bi bi-telephone"></i> Teléfono fijo: 9010101-Cel: 543622010101
+                        </li>
                     </ul>
                 </div>
                 <div class="subdivfooter">
                     <svg width="100" height="100" viewBox="0 0 340 334" class="css-1j8o68f">
                         <defs id="SvgjsDefs1243"></defs>
-                        <g
-                            id="SvgjsG1244"
-                            featurekey="rootContainer"
-                            transform="matrix(1,0,0,1,0,0)"
-                            fill="#59606d"
-                        >
-                            <rect
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="340"
-                                height="334"
-                                rx="10"
-                                ry="10"
-                            ></rect>
+                        <g id="SvgjsG1244" featurekey="rootContainer" transform="matrix(1,0,0,1,0,0)" fill="#59606d">
+                            <rect xmlns="http://www.w3.org/2000/svg" width="340" height="334" rx="10" ry="10"></rect>
                         </g>
                         <g
                             id="SvgjsG1245"
@@ -235,5 +261,6 @@
         ></script>
 
         <script src="./js/main.js"></script>
+        <script src="./js/form-changer.js"></script>
     </body>
 </html>

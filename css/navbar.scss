@@ -94,12 +94,10 @@ header {
         justify-content: center;
         gap: 2rem;
         visibility: hidden;
-
-        height: content;
-        width: 100vw;
+        
+        width: 100%;
         padding: 3rem 0;
         margin-top: -100%;
-
         background-color: rgba(0, 0, 0, 0);
     }
 

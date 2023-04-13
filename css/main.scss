@@ -1,40 +1,199 @@
-
-
-
-$pal-dark: rgb(160, 134, 86);
-$pal-light: #dff6ff;
-$pal-h-dark: #1363df;
-$pal-h-light: #47b5ff;
-$text-light: hsl(197, 030%, 94%); 
-
-
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    // border: 1px dashed red;
 }
 
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
 section {
-    background-color: $pal-dark;
-    color: $text-light;
+    background-color: rgb(160, 134, 86);
+    color: hsl(197, 30%, 94%);
 }
 
+.form1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
-.form1{display: flex;flex-direction: column;margin-left: 5%;margin-right: 5%;}
-
-.cards{display: flex;justify-content:space-around;flex-wrap: wrap;z-index: 0;}
-.colorfooter{background-color:rgb(133, 99, 37);}
-.segundodivfooter{display: flex;justify-content: space-around;background-color: rgb(160, 134, 86);}
-.subdivfooter{color: black;font-weight: 500;}
+.colorbarra {
+    background-image: linear-gradient(rgb(114, 78, 10), rgb(219, 181, 109));
+}
 
 .cards {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  z-index: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    z-index: 0;
 }
+
+footer {
+    position: relative;
+    bottom: 0;
+
+    td {
+        padding-left: 0.5rem;
+    }
+}
+
+.colorfooter {
+    background-color: rgb(133, 99, 37);
+}
+
+.segundodivfooter {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(160, 134, 86);
+    flex-wrap: wrap;
+}
+
+.subdivfooter {
+    color: black;
+    font-weight: 500;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    z-index: 0;
+}
+
+.section {
+    background-color: rgb(160, 134, 86);
+    color: hsl(197, 30%, 94%);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    border-radius: 8px;
+}
+
 .cards .card {
-  z-index: -1;
-}/*# sourceMappingURL=main.css.map */
+    z-index: -1;
+} /*# sourceMappingURL=main.css.map */
+
+@keyframes to_inactive {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@keyframes to_active {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+#success{
+    color:rgb(60, 60, 60);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding:1rem;
+    border: 3px solid  rgb(160, 134, 86);
+    span{
+        font-weight: bold;
+    }
+    &.to-active{
+        display: block !important;
+        opacity: 1;
+        animation-name: to_active;
+        animation-duration: .5s;
+    }
+    &.inactive{
+        opacity: 0;
+        display: none !important;
+    }
+}
+.form-contacto {
+    
+    &.to-inactive {
+        opacity: 1;
+        animation-name: to_inactive;
+        animation-duration: .5s;
+    }
+    &.inactive {
+        opacity: 0;
+        display: none !important;
+    }
+    &.to-active {
+        opacity: 1;
+        animation-name: to_active;
+        animation-duration: .5s;
+    }
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    // background-color: red;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+
+    div {
+        padding-bottom: 1rem;
+    }
+
+    label {
+        padding-left: 1rem;
+    }
+
+    .label-error {
+        i,
+        span {
+            color: tomato;
+        }
+    }
+    input,
+    textarea {
+        display: block;
+        width: 100%;
+        transition: border 0.5s;
+        padding: 0.5rem;
+        border: none;
+        border: 1px solid rgba(229, 102, 23, 0.1);
+        border-bottom: 1px solid rgba(229, 103, 23, 0.1);
+        border-radius: 5px 5px 0 0;
+        box-shadow: none;
+        outline: 0 none;
+
+        &::placeholder {
+            color: rgb(227, 227, 227);
+        }
+        &:hover {
+            border-bottom: 1px solid rgba(229, 102, 23, 23);
+        }
+        &:focus {
+            border: 1px solid rgb(229, 102, 23);
+        }
+    }
+    button {
+        font-size: 1.5em;
+        transition: color 0.5s, background-color 0.5s;
+        width: 100%;
+        padding: 0.2rem 0.5rem;
+        border: 1px solid rgba(229, 103, 23, 0.8);
+        color: black;
+        background: none;
+        &:hover {
+            background-color: rgba(229, 103, 23, 0.8);
+            color: white;
+        }
+    }
+}
