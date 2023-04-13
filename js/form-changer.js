@@ -79,16 +79,16 @@ async function form_submission() {
     let lastname = values["lastname"];
     const url = "https://formspree.io/f/meqwprnv";
     data = { name: name, text_mail: email, lastname: lastname, message: message };
-    // const response = await fetch(url, {
-    //     method: "POST", // *GET, POST, PUT, DELETE, etc.
-    //     headers: {
-    //         "Content-Type": "application/json",
-    //         // 'Content-Type': 'application/x-www-form-urlencoded',
-    //     },
-    //     body: JSON.stringify(data), // body data type must match "Content-Type" header
-    // });
-    // console.log(await response);
-    // parses JSON response into native JavaScript objects
+    const response = await fetch(url, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+           
+        },
+        body: JSON.stringify(data), 
+    });
+    console.log(await response);
+    
     show_success();
 }
 
