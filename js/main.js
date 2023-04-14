@@ -21,7 +21,6 @@ $(document).ready(function() {
     function dolar () {
         $.getJSON("https://api.bluelytics.com.ar/v2/latest",
         function (data) {
-            console.log(data);
             document.getElementById("dolar").textContent=data.blue.value_avg
         })
         

@@ -86,6 +86,10 @@ footer {
     z-index: -1;
 } /*# sourceMappingURL=main.css.map */
 
+.art-button {
+    padding: 0.2rem 0.5rem;
+}
+
 @keyframes to_inactive {
     from {
         opacity: 1;
@@ -102,32 +106,49 @@ footer {
         opacity: 1;
     }
 }
-#success{
-    color:rgb(60, 60, 60);
+#success {
+    color: rgb(60, 60, 60);
     margin-top: 3rem;
     margin-bottom: 3rem;
-    padding:1rem;
-    border: 3px solid  rgb(160, 134, 86);
-    span{
+    padding: 1rem;
+    border: 3px solid rgb(160, 134, 86);
+    span {
         font-weight: bold;
     }
-    &.to-active{
+    &.to-active {
         display: block !important;
         opacity: 1;
         animation-name: to_active;
-        animation-duration: .5s;
+        animation-duration: 0.5s;
     }
-    &.inactive{
+    &.inactive {
         opacity: 0;
         display: none !important;
     }
 }
+
+.hover-section {
+    cursor: pointer;
+    &:hover {
+        background-color: rgb(160, 134, 102);
+        outline: 1px solid red;
+    }
+}
+.relative{
+    position: relative;
+}
+.show-more {
+    display: block;
+    position: absolute;
+    bottom: max-content;
+    bottom: 0;
+}
+
 .form-contacto {
-    
     &.to-inactive {
         opacity: 1;
         animation-name: to_inactive;
-        animation-duration: .5s;
+        animation-duration: 0.5s;
     }
     &.inactive {
         opacity: 0;
@@ -136,7 +157,7 @@ footer {
     &.to-active {
         opacity: 1;
         animation-name: to_active;
-        animation-duration: .5s;
+        animation-duration: 0.5s;
     }
 
     margin-top: 1rem;
@@ -195,5 +216,24 @@ footer {
             background-color: rgba(189, 145, 49, 0.8);
             color: white;
         }
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .max-image-size {
+        margin: 0 auto;
+        height: 300px !important;
+        width: 100%;
+        object-fit: cover;
+        object-position: 0 90%;
+    }
+}
+@media only screen and (min-width: 990px) {
+    .max-image-size {
+        height: 223px !important;
+
+        object-fit: cover;
+
+        width: 257px;
     }
 }

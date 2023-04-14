@@ -85,6 +85,10 @@ footer td {
 .cards .card {
   z-index: -1;
 } 
+.art-button {
+  padding: 0.2rem 0.5rem;
+}
+
 @keyframes to_inactive {
   from {
     opacity: 1;
@@ -120,6 +124,25 @@ footer td {
 #success.inactive {
   opacity: 0;
   display: none !important;
+}
+
+.hover-section {
+  cursor: pointer;
+}
+.hover-section:hover {
+  background-color: rgb(160, 134, 102);
+  outline: 1px solid red;
+}
+
+.relative {
+  position: relative;
+}
+
+.show-more {
+  display: block;
+  position: absolute;
+  bottom: max-content;
+  bottom: 0;
 }
 
 .form-contacto {
@@ -193,4 +216,24 @@ footer td {
 .form-contacto button:hover {
   background-color: rgba(189, 145, 49, 0.8);
   color: white;
+}
+
+@media only screen and (max-width: 990px) {
+  .max-image-size {
+    margin: 0 auto;
+    height: 300px !important;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0 90%;
+       object-position: 0 90%;
+  }
+}
+@media only screen and (min-width: 990px) {
+  .max-image-size {
+    height: 223px !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 257px;
+  }
 }/*# sourceMappingURL=main.css.map */
