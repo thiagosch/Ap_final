@@ -107,6 +107,7 @@ for (var i = 0; i < obras.length; i++) {
 
     const description = document.createElement("p");
     description.innerHTML = obra["description"];
+    description.classList.add('pb-4')
     description_container.appendChild(description);
 
     const show_more_container = document.createElement("span");

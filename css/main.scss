@@ -134,7 +134,7 @@ footer {
         outline: 1px solid  rgb(123, 88, 23);
         .show-more{
             color: rgb(74, 65, 48);
-            cursor:default;
+            
         }
     }
 }
@@ -148,10 +148,13 @@ footer {
     bottom: 0;
 }
 .modal-show-more {
+    cursor:default;
+    transition:height 1s;
     background-color: rgb(160, 134, 86);
-    display: none;
+    // display: none;
     height: 30vh;
     overflow-y: scroll;
+    height:0px;
     // border: 1px solid black;
     position: relative;
     .modal-degrade{
@@ -168,7 +171,8 @@ footer {
     }
 
     &.active {
-        display: block;
+        // display: block;
+        height: 30vh;
     }
 }
 
