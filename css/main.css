@@ -130,8 +130,11 @@ footer td {
   cursor: pointer;
 }
 .hover-section:hover {
-  background-color: rgb(160, 134, 102);
-  outline: 1px solid red;
+  outline: 1px solid rgb(123, 88, 23);
+}
+.hover-section:hover .show-more {
+  color: rgb(74, 65, 48);
+  cursor: default;
 }
 
 .relative {
@@ -143,6 +146,24 @@ footer td {
   position: absolute;
   bottom: max-content;
   bottom: 0;
+}
+
+.modal-show-more {
+  background-color: rgb(160, 134, 86);
+  display: none;
+  height: 30vh;
+  overflow-y: scroll;
+  position: relative;
+}
+.modal-show-more .modal-degrade {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgb(160, 134, 86), rgb(160, 134, 86));
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 20%;
+}
+.modal-show-more.active {
+  display: block;
 }
 
 .form-contacto {
